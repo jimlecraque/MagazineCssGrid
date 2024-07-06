@@ -1,0 +1,28 @@
+header
+{
+    display: grid;
+}
+.container
+{
+    display: grid;
+}
+footer
+{
+    display: flex;
+    justify-content: space-between;
+}
+footer ul
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer ul li
+{
+    list-style-type: none;
+    display: inline;
+}
+footer ul li a
+{
+    text-decoration: none;
+}
