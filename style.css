@@ -1,15 +1,59 @@
+body
+{
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
 header
 {
     display: grid;
+    grid-template-rows: auto auto;
+    background-color: rgb(3, 3, 30);
 }
-.container
+.header-text
+{
+    text-align: center;
+    color: rgb(242, 105, 7);
+}
+main
 {
     display: grid;
+    grid-template-rows: auto auto;
+}
+.first-row
+{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+}
+.first-row div:nth-of-type(2)
+{
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+.second-row
+{
+    display: grid;
+    grid-template-columns: 30% auto;
+}
+.second-first-column
+{
+    display: grid;
+    grid-template-rows: repeat(7, auto) ;
+}
+.second-second-column
+{
+    display: grid;
+    grid-template-rows: auto auto auto ;
+}
+.second-second-column div:nth-of-type(2)
+{
+    display: grid;
+    grid-template-columns: auto 1fr;
 }
 footer
 {
     display: flex;
     justify-content: space-between;
+    background-color: aqua;
 }
 footer ul
 {
@@ -22,7 +66,7 @@ footer ul li
     list-style-type: none;
     display: inline;
 }
-footer ul li a
-{
-    text-decoration: none;
+.social-media{
+    width: 50px;
+    margin: 15px;
 }
